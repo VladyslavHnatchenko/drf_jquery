@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <button class="apireq">click me</button>
+</div>
+<div id="jsonresp" style="margin-top: 100px">
+    <p><label>First name:</label><span id="first_name"></span></p>
+    <p><label>Last name:</label><span id="last_name"></span></p>
+    <p><label>Age:</label><span id="age"></span></p>
+    <p><label>Gender:</label><span id="gender"></span></p>
+</div>
+<script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
